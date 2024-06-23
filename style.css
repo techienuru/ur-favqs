@@ -9,6 +9,7 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
   padding: 0;
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: justify;
 }
 /* SCROLL BAR */
 ::-webkit-scrollbar {
