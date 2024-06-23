@@ -8,36 +8,36 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 /* SCROLL BAR */
 ::-webkit-scrollbar {
-  background-color: #00F6FF;
+  background-color: #00f6ff;
   width: 15px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   width: 30px;
   background-color: white;
 }
 
-
 #header-section {
-  background-image: linear-gradient(to top, #26b9bed2, #26b9bed2),url(./image/working-housing-project.jpg);
+  background-image: linear-gradient(to top, #26b9bed2, #26b9bed2),
+    url(./image/working-housing-project.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
 }
 #header-section > nav {
-  background-color: #00F6FF;
+  background-color: #00f6ff;
   box-shadow: 0px 0px 10px black;
 }
-#header-section > nav > div > a{
+#header-section > nav > div > a {
   color: #f6f62c;
 }
-#header-section > nav > div > div > ul > li > a{
+#header-section > nav > div > div > ul > li > a {
   position: relative;
 }
-#header-section > nav > div > div > ul > li > a::after{
+#header-section > nav > div > div > ul > li > a::after {
   content: "";
   background-color: white;
   display: none;
@@ -48,75 +48,74 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
   left: 30%;
   transition: display ease 0.5ms;
 }
-#header-section > nav > div > div > ul > li > a:hover::after{
+#header-section > nav > div > div > ul > li > a:hover::after {
   display: initial;
 }
-#header-section > div > h1{
+#header-section > div > h1 {
   font-size: 100px;
 }
-#header-section > div > #we-are{
-  color: #f6f62ce5;
+#header-section > div > #we-are {
+  color: #ffd12cee;
 }
 
 /* ABOUT SECTION */
-#about-us > .container > div > a{
-  background-color: #00F6FF;
+#about-us > .container > div > a {
+  background-color: #00f6ff;
   color: black;
 }
 
-#about-us:hover .container > div > img{
-  opacity: .5;
+#about-us:hover .container > div > img {
+  opacity: 0.5;
   transform: scale(1.3);
 }
-#about-us:hover .container > #about-us-col1{
- background-color: rgb(79, 74, 74);
- overflow: hidden;
+#about-us:hover .container > #about-us-col1 {
+  background-color: rgb(79, 74, 74);
+  overflow: hidden;
 }
 /* END OF ABOUT SECTION */
 
 /* SERVICES SECTION */
-#services{
+#services {
   background-color: whitesmoke;
 }
-#services > .container > #services-f-row > div > a{
-  background-color: #00F6FF;
+#services > .container > #services-f-row > div > a {
+  background-color: #00f6ff;
 }
-#services > .container > #services-s-row > div{
+#services > .container > #services-s-row > div {
   background-color: rgba(255, 255, 255, 0.766);
 }
-.flex-shrink > #services-icons{
- color: #00F6FF;
+.flex-shrink > #services-icons {
+  color: #00f6ff;
 }
-#services > .container > p{
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #555;
+#services > .container > p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
 }
-#services > .container > p > a{
-    color: #00F6FF;
-    text-decoration: none;
-    font-weight: bold;
+#services > .container > p > a {
+  color: #00f6ff;
+  text-decoration: none;
+  font-weight: bold;
 }
-#services > .container > p > a:hover{
+#services > .container > p > a:hover {
   text-decoration: underline;
 }
 
 /* END OF SERVICES SECTION */
 
-
 /* PROJECTS SECTION */
-#projects > .container > h4{
+#projects > .container > h4 {
   color: #f6f62c;
 }
-#projects > .container > .row > .col-md-6 > p{
+#projects > .container > .row > .col-md-6 > p {
   top: 50%;
   left: 39%;
   display: none;
 }
-#projects > .container > .row > .col-md-6:hover img{
+#projects > .container > .row > .col-md-6:hover img {
   opacity: 0.3;
 }
-#projects > .container > .row > .col-md-6:hover p{
+#projects > .container > .row > .col-md-6:hover p {
   display: block;
   color: #ffff02;
 }
@@ -126,34 +125,32 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
 
 /* END OF SKILLS SECTION */
 
-
 /* CONTACT SECTION */
-#contact-us > .container > .row > .col-md-4 > a{
-  color: #00F6FF;
+#contact-us > .container > .row > .col-md-4 > a {
+  color: #00f6ff;
 }
-#contact-us > .container > .row > .col-md-4 > .d-flex > a{
-  background-color: #00F6FF;
+#contact-us > .container > .row > .col-md-4 > .d-flex > a {
+  background-color: #00f6ff;
 }
-#contact-us > .container > .row > div > form > .row > .col-12 > button{
-  background-color: #00F6FF;
+#contact-us > .container > .row > div > form > .row > .col-12 > button {
+  background-color: #00f6ff;
 }
 
 /* END OF CONTACT SECTION */
 
-
-#to-top{
+#to-top {
   position: fixed;
-  bottom: 15px; 
+  bottom: 15px;
   right: 10px;
-  background-color: #f6f62c;
+  background-color: #ffd12cee;
 }
-@media all and (width <= 428px){
-  #header-section > div > h1{
+@media all and (width <= 428px) {
+  #header-section > div > h1 {
     font-size: 70px;
-  } 
+  }
 }
-@media all and (width <= 302px){
-  #header-section > div > h1{
+@media all and (width <= 302px) {
+  #header-section > div > h1 {
     font-size: 60px;
-  } 
+  }
 }
