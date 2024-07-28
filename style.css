@@ -78,6 +78,11 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
 #about-us > .container > div > a {
   background-color: #00f6ff;
   color: black;
+  transition: all ease-in-out 0.5s;
+}
+#about-us > .container > div > a:hover {
+  background-color: #009655;
+  color: white;
 }
 
 #about-us:hover .container > div > img {
@@ -121,19 +126,30 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
 
 /* PROJECTS SECTION */
 #projects > .container > h4 {
-  color: #f6f62c;
+  color: #009655;
 }
-#projects > .container > .row > .col-md-6 > p {
+#projects > .container > .d-flex > small {
+  cursor: pointer;
+  transition: color ease 0.3s;
+}
+#projects > .container > .d-flex > small:hover {
+  color: #009655;
+}
+.clicked-work {
+  color: #009655;
+  border-bottom: 3px solid #00f6ff;
+}
+#projects > .container > .row > .col-md-4 > p {
   top: 50%;
-  left: 39%;
+  left: 35%;
   display: none;
 }
-#projects > .container > .row > .col-md-6:hover img {
+#projects > .container > .row > .col-md-4:hover img {
   opacity: 0.3;
 }
-#projects > .container > .row > .col-md-6:hover p {
+#projects > .container > .row > .col-md-4:hover p {
   display: block;
-  color: #ffff02;
+  color: #009655;
 }
 /* END OF PROJECTS SECTION */
 
