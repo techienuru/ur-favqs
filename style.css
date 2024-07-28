@@ -19,6 +19,7 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
 ::-webkit-scrollbar-thumb {
   width: 30px;
   background-color: white;
+  border-radius: 10px;
 }
 
 #header-section {
@@ -34,6 +35,13 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
 }
 #header-section > nav > div > a {
   color: #f6f62c;
+}
+#header-section > nav > div > .navbar-toggler:active,
+#header-section > nav > div > .navbar-toggler:focus {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
 }
 #header-section > nav > div > div > ul > li > a {
   position: relative;
@@ -52,10 +60,17 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
 #header-section > nav > div > div > ul > li > a:hover::after {
   display: initial;
 }
-#header-section > div > h1 {
-  font-size: 100px;
+#header-section > div {
+  padding: 50px 0px 0px 0px;
 }
-#header-section > div > #we-are {
+#header-section > div > h2 {
+  margin: 0px;
+}
+#header-section > div > h1 {
+  margin-top: 0;
+  font-size: 60px;
+}
+#header-section > div #we-are {
   color: #ffd12cee;
 }
 
@@ -145,13 +160,13 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
   right: 10px;
   background-color: #ffd12cee;
 }
-@media all and (width <= 428px) {
+@media all and (width <= 600px) {
   #header-section > div > h1 {
-    font-size: 70px;
+    font-size: 40px;
   }
 }
 @media all and (width <= 302px) {
   #header-section > div > h1 {
-    font-size: 60px;
+    font-size: 35px;
   }
 }
