@@ -161,6 +161,10 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
 }
 #projects > .container > .row > .col-md-4:hover p {
   display: block;
+  
+}
+#projects > .container > .row > .col-md-4:hover p > a{
+  text-decoration: none;
   color: #009655;
 }
 /* END OF PROJECTS SECTION */

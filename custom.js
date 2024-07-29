@@ -1,39 +1,45 @@
 const works = [
   {
     year: "2022",
-    image: "image/project 1.jfif",
+    image:
+      "works/2022/PLOT 679, CAD ZONE C04, DAPE DISTRICT, FCT ABUJA (1).png",
     altToImage: "First project",
     hoverText: "Project 1",
+    linkToFile:
+      "works/2022/PLOT 679, CAD ZONE C04, DAPE DISTRICT, FCT ABUJA (1).pdf",
   },
   {
     year: "2022",
-    image: "image/project 2.jpg",
+    image:
+      "works/2022/FEDERAL INSTITUTE OF INDUSTRIAL RESEARCH financial bid 2022.png",
     altToImage: "Second project",
     hoverText: "Project 2",
-  },
-  {
-    year: "2022",
-    image: "image/project 3.jpg",
-    altToImage: "Third project",
-    hoverText: "Project 3",
+    linkToFile:
+      "works/2022/FEDERAL INSTITUTE OF INDUSTRIAL RESEARCH financial bid 2022.pdf",
   },
   {
     year: "2023",
     image: "image/project 1.jfif",
     altToImage: "Third project",
     hoverText: "Project 3",
+    linkToFile:
+      "works/2022/FEDERAL INSTITUTE OF INDUSTRIAL RESEARCH financial bid 2022.pdf",
   },
   {
     year: "2024",
     image: "image/project 4.jpg",
     altToImage: "First project",
     hoverText: "Project 1",
+    linkToFile:
+      "works/2022/FEDERAL INSTITUTE OF INDUSTRIAL RESEARCH financial bid 2022.pdf",
   },
   {
     year: "2024",
     image: "image/project 2.jpg",
     altToImage: "Second project",
     hoverText: "Project 2",
+    linkToFile:
+      "works/2022/FEDERAL INSTITUTE OF INDUSTRIAL RESEARCH financial bid 2022.pdf",
   },
 ];
 
@@ -83,7 +89,9 @@ function displayWorks(switcherText, jsWorks) {
               class="img-fluid object-fit-fill w-100 h-100 wow fadeInRight"
               data-wow-delay="0.2s"
             />
-            <p class="position-absolute fs-3">${index.hoverText}</p>
+            <p class="position-absolute fs-3">
+              <a href="${index.linkToFile}" target="_blank">Preview</a>
+            </p>
           </div>`;
 
       worksContent += content;
@@ -105,7 +113,9 @@ function displayAllWorks(jsWorks) {
               class="img-fluid object-fit-fill w-100 h-100 wow fadeInRight"
               data-wow-delay="0.2s"
             />
-            <p class="position-absolute fs-3">${index.hoverText}</p>
+            <p class="position-absolute fs-3">
+              <a href="${index.linkToFile}" target="_blank">Preview</a>
+            </p>
           </div>`;
 
     worksContent += content;
