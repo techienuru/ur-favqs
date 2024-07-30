@@ -99,14 +99,17 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
 #services {
   margin: 100px 0px 0px 0px;
   /* background-color: rgba(20, 15, 15, 0.904); */
-  background-color: #009655;
+  background-color: black;
   color: white;
 }
 #services > .container > #services-f-row > div > a {
   background-color: #00f6ff;
 }
+#services .card {
+  /* background-color: #00ff89; */
+}
 #services .card > .card-body > div:first-child {
-  background-color: #00f6ff;
+  background-color: #00ff89;
   width: fit-content;
   border-radius: 50%;
   padding: 20px;
@@ -161,9 +164,8 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
 }
 #projects > .container > .row > .col-md-4:hover p {
   display: block;
-  
 }
-#projects > .container > .row > .col-md-4:hover p > a{
+#projects > .container > .row > .col-md-4:hover p > a {
   text-decoration: none;
   color: #009655;
 }
