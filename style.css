@@ -24,29 +24,30 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
 
 #header-section {
   background-image: linear-gradient(to top, #26b9bed2, #26b9bed2),
-    url(./image/working-housing-project.jpg);
+    url(./images/hero-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
+  height: 70vh;
 }
-#header-section > nav {
+#header-section nav {
   background-color: #00f6ff;
   box-shadow: 0px 0px 10px black;
 }
-#header-section > nav > div > a {
+#header-section nav > div > a {
   color: #f6f62c;
 }
-#header-section > nav > div > .navbar-toggler:active,
-#header-section > nav > div > .navbar-toggler:focus {
+#header-section nav > div > .navbar-toggler:active,
+#header-section nav > div > .navbar-toggler:focus {
   background-color: transparent;
   box-shadow: none;
   border: none;
   outline: none;
 }
-#header-section > nav > div > div > ul > li > a {
+#header-section nav > div > div > ul > li > a {
   position: relative;
 }
-#header-section > nav > div > div > ul > li > a::after {
+#header-section nav > div > div > ul > li > a::after {
   content: "";
   background-color: white;
   display: none;
@@ -60,17 +61,17 @@ colors: 60=#FFFF00  30=#ABEA0D  10=#4DD12D optional #00B444, #009655, #007861
 #header-section > nav > div > div > ul > li > a:hover::after {
   display: initial;
 }
-#header-section > div {
+#hero-section > div {
   padding: 50px 0px 0px 0px;
 }
-#header-section > div > h2 {
+#hero-section > div > h1 {
   margin: 0px;
 }
-#header-section > div > h1 {
+#hero-section > div > h2 {
   margin-top: 0;
   font-size: 60px;
 }
-#header-section > div #we-are {
+#hero-section #we-are {
   color: #ffd12cee;
 }
 
