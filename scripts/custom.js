@@ -91,12 +91,12 @@ displayAllWorks(jsWorks);
 
 jsWorksSwitchers.forEach((jsWorksSwitcher) => {
   jsWorksSwitcher.addEventListener("click", () => {
-    if (!jsWorksSwitcher.classList.contains("clicked-work")) {
+    if (!jsWorksSwitcher.classList.contains("active")) {
       // Collecting the text inside the switcher above my experience section
       const switcherText = jsWorksSwitcher.innerText;
 
       removeClass(jsWorksSwitchers);
-      jsWorksSwitcher.classList.add("clicked-work");
+      jsWorksSwitcher.classList.add("active");
 
       if (switcherText === "All works") {
         displayAllWorks(jsWorks);
@@ -110,8 +110,8 @@ jsWorksSwitchers.forEach((jsWorksSwitcher) => {
 // Removes Class from the switcher/Links that switch the works
 function removeClass(jsWorksSwitchers) {
   jsWorksSwitchers.forEach((jsWorksSwitcher) => {
-    if (jsWorksSwitcher.classList.contains("clicked-work")) {
-      jsWorksSwitcher.classList.remove("clicked-work");
+    if (jsWorksSwitcher.classList.contains("active")) {
+      jsWorksSwitcher.classList.remove("active");
     }
   });
 }
@@ -122,16 +122,16 @@ function displayWorks(switcherText, jsWorks) {
 
   works.forEach((index) => {
     if (index.year === switcherText) {
-      const content = `<div class="col-md-4 position-relative">
-            <img
-              src="./${index.image}"
-              alt="${index.altToImage}"
-              class="img-fluid object-fit-fill w-100 h-100 wow fadeInRight"
-              data-wow-delay="0.2s"
-            />
-            <p class="position-absolute fs-3">
-              <a href="${index.linkToFile}" target="_blank">Preview</a>
-            </p>
+      const content = `<div class="project-card col-md-4 position-relative">
+        <img
+          src="./${index.image}"
+          alt="${index.altToImage}"
+          class="project-image img-fluid object-fit-fill w-100 h-100 wow fadeInRight"
+          data-wow-delay="0.2s"
+        />
+        <p class="preview-link position-absolute fs-3">
+          <a href="${index.linkToFile}" target="_blank">Preview</a>
+        </p>
           </div>`;
 
       worksContent += content;
@@ -146,14 +146,14 @@ function displayAllWorks(jsWorks) {
   let worksContent = "";
 
   works.forEach((index) => {
-    const content = `<div class="col-md-4 position-relative">
+    const content = `<div class="project-card col-md-4 position-relative">
             <img
               src="./${index.image}"
               alt="${index.altToImage}"
-              class="img-fluid object-fit-fill w-100 h-100 wow fadeInRight"
+              class="project-image img-fluid object-fit-fill w-100 h-100 wow fadeInRight"
               data-wow-delay="0.2s"
             />
-            <p class="position-absolute fs-3">
+            <p class="preview-link position-absolute fs-3">
               <a href="${index.linkToFile}" target="_blank">Preview</a>
             </p>
           </div>`;
